@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>
+           Responsive Media Page
+        </title>
+
+        <style>
+            *{
+                margin:0;
+            }
+            body
+            {
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              line-height: 1.3;
+              background: linear-gradient(120deg,#fcfcfc,#1616);
+            }
+            header
+            {
+              text-align: center;
+              padding: 50px 22px;
+              background: linear-gradient(130deg,);
+            }
+            header h1
+            {
+            color: hotpink;
+            margin-bottom: 35px;
+            }
+            header .mda
+            {
+            background-color: rgb(255, 174, 255);
+            box-shadow: rgb(189, 120, 253);
+            transition: transform 0.5s,box-shadow 0.5s;
+            }
+            header.mda:hover
+            {
+
+             transform: translateY(-6px);
+             box-shadow:0 10px 20px rgb(227, 149, 48);
+            }
+            .grid-view
+            {
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                gap:25px;
+                padding: 50px 30px;
+                max-width: 1150px;
+            }
+            .grid
+            {
+              background: #1616;
+              border-radius: 20px;
+              padding: 20px;
+              text-align: center;
+              box-shadow: rgb(126, 17, 126);
+              transition: transform 0.5s,box-shadow 0.7s;
+            }
+            .grid:hover
+            {
+               transform: translateY(-7px);
+               box-shadow: cornflowerblue;
+            }
+            .grid h2
+            {
+              margin-bottom: 18px;
+              color: rgb(165, 17, 91);
+            }
+            footer{
+                text-align: center;
+                padding: 20px;
+                background-color: rgb(204, 147, 177);
+                grid-template-columns: repeat(3,1fr);
+                font-weight: bold;
+            }
+            @media (max-width:1150px)
+            {
+               .grid-view
+               {
+                  grid-template-columns: repeat(2,0.8fr);
+                  
+               } 
+               header h1
+               {
+                   font-size: 2.5rem;
+               }
+               header p
+               {
+                 font-size: 1.5rem;
+                 
+               }
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> Landing Page</h1>
+            <p>The responsive desine page!!! </p>
+            <a href="iframe width="560 height="315" src="https://www.youtube.com/embed/OTCuykFHBeA?si=c4Ler5n2EBOi5Bm5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="mda"></iframe>let's Begin!</a>
+        </header>
+        <section class="grid-view">
+            <div class="grid">
+                <h2>Discover the first  page</h2>
+                <p>Here some pages are here it used to discover particular page you want</p>
+
+            </div>
+            <div class="grid">
+                <h2>Discover the second option</h2>
+                <p>Here some pages are available in that the second page was discoverd</p>
+            </div>
+
+            <div class="grid">
+                <h2>Discover the thired option</h2>
+                <p>Here some pages are available in that the thired page was selected</p>
+            </div>
+
+            <div class="grid">
+                <h2>Discover the fourth option</h2>
+                <p>Here some pages are available in that the fourth page was selected</p>
+            </div>
+
+            <div class="grid">
+                <h2>Discover the five option</h2>
+                <p>Here some pages are available in that the five page was selected</p>
+            </div>
+
+
+        </section>
+        <footer>
+            <p>2025 Responsive Desing All rights reserved <a href="">Term and Apply</a></p>
+        </footer>
+    </body>
+</html>
