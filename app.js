@@ -1,9 +1,13 @@
 const mongoose = require("mongoose");
 const express = require("express");
 const { v4: uuid } = require("uuid");
+const cors=require('cors')
+
 
 const app = express();
 app.use(express.json());
+
+app.use('cors');
 
 // Connect to MongoDB
 const startServer = async () => {
