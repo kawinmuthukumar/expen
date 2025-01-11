@@ -24,7 +24,9 @@ const startServer = async () => {
     }
 };
 
+
 // Define Schema and Model
+
 const expenseSchema = new mongoose.Schema({
     id: { type: String, required: true, unique: true },
     title: { type: String, required: true },
